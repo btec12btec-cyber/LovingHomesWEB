@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | فندق لوفينغ هومز للكلاب</title>
+    <meta name="description" content="تواصل مع فندق لوفينغ هومز للكلاب في هونج كونج.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23e6b400'/><text y='.9em' font-size='50' x='50' text-anchor='middle' fill='white'>🐾</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container { max-width: 100%; padding: 0 15px; }
+        .section { padding: 40px 15px; }
+        .contact-container { display: flex; flex-direction: column; gap: 30px; }
+        .contact-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .contact-card { padding: 20px 15px; }
+        .contact-form { padding: 25px 20px; }
+        @media (min-width: 768px) {
+            .contact-container { display: grid; grid-template-columns: 1fr 1fr; }
+            .contact-info-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">التخطي للمحتوى الرئيسي</a>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="شعار لوفينغ هومز" class="logo-img">
+            <span>لوفينغ هومز</span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="افتح القائمة">☰</button>
+        <nav aria-label="التنقل الرئيسي">
+            <ul>
+                <li><a href="index.html" data-translate="الرئيسية"><span class="key-hint">1</span> الرئيسية</a></li>
+                <li><a href="about.html" data-translate="من نحن"><span class="key-hint">2</span> من نحن</a></li>
+                <li><a href="facilities.html" data-translate="المرافق"><span class="key-hint">3</span> المرافق</a></li>
+                <li><a href="packages.html" data-translate="الحزم"><span class="key-hint">4</span> الحزم</a></li>
+                <li><a href="custom-packages.html" data-translate="الحزم المخصصة"><span class="key-hint">5</span> الحزم المخصصة</a></li>
+                <li><a href="testimonies.html" data-translate="شهادات العملاء"><span class="key-hint">6</span> شهادات العملاء</a></li>
+                <li><a href="faq.html" data-translate="أسئلة شائعة"><span class="key-hint">7</span> أسئلة شائعة</a></li>
+                <li><a href="contact.html" class="active" data-translate="اتصل بنا"><span class="key-hint">8</span> اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>أحجز الآن!</h1>
+            <p>نحن هنا للإجابة على جميع استفساراتك</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-info-grid">
+                            <div class="contact-card">
+                                <div class="icon">📞</div>
+                                <h4>الهاتف</h4>
+                                <p>+852 4121 6967</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="icon">✉️</div>
+                                <h4>البريد</h4>
+                                <p>Design@lovinghomehk.com</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="icon">📍</div>
+                                <h4>الموقع</h4>
+                                <p>هونج كونج</p>
+                            </div>
+                            <div class="contact-card">
+                                <div class="icon">🕒</div>
+                                <h4>ساعات العمل</h4>
+                                <p>24 ساعة / 7 أيام</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>أرسل لنا رسالة</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">الاسم الكامل *</label>
+                                <input type="text" id="name" name="name" required placeholder="أدخل اسمك" pattern="[\u0600-\u06FFa-zA-Z\s]+" title="الاسم يجب أن يحتوي على حروف فقط">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني *</label>
+                                <input type="email" id="email" name="email" required placeholder="example@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+852 1234 5678" pattern="[0-9+\s]+" title="الرقم يجب أن يحتوي على أرقام فقط">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dogNameSelect">اسم الكلب</label>
+                                <select id="dogNameSelect" name="dogNameSelect">
+                                    <option value="">اختر...</option>
+                                    <option value="without">بلا اسم محدد</option>
+                                    <option value="custom">اسم آخر</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group" id="dogNameInputGroup" style="display: none;">
+                                <label for="dogName">اسم الكلب</label>
+                                <input type="text" id="dogName" name="dogName" placeholder="أدخل اسم الكلب" pattern="[\u0600-\u06FFa-zA-Z\s]+" title="الاسم يجب أن يحتوي على حروف فقط">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dogSize">حجم الكلب</label>
+                                <select id="dogSize" name="dogSize">
+                                    <option value="">اختر حجم الكلب...</option>
+                                    <option value="صغير">صغير</option>
+                                    <option value="متوسط">متوسط</option>
+                                    <option value="كبير">كبير</option>
+                                    <option value="عملاق">عملاق</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package">الحزمة المطلوبة</label>
+                                <select id="package" name="package">
+                                    <option value="">اختر الحزمة...</option>
+                                    <option value="premium">الحزمة المميزة</option>
+                                    <option value="classic">الحزمة الكلاسيكية</option>
+                                    <option value="day">حزمة اليوم</option>
+                                    <option value="custom">حزمة مخصصة</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bookingDate">تاريخ الحجز</label>
+                                <input type="date" id="bookingDate" name="bookingDate">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">رسالتك *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">إرسال الطلب</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section bg-light">
+            <div class="container">
+                <h2>موقعنا في هونج كونج</h2>
+                <div style="background: #e0e0e0; height: 300px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                    <a href="https://www.google.com/maps/place/Hong+Kong/@22.3527242,114.1394,11z/data=!3m1!4b1!4m6!3m5!1s0x3403e2eda332980f:0xf08ab3badbeac97c!8m2!3d22.3193039!4d114.1693611!16zL20vMDNoNjQ?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: #1a1a1a; padding: 20px;">
+                        <span style="font-size: 3rem;">🗺️</span>
+                        <span style="font-size: 1.5rem; margin-top: 10px;"> افتح خريطة الموقع - Google Maps</span>
+                        <span style="font-size: 1rem; margin-top: 8px; color: #666;">اضغط لفتح الموقع</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="شعار لوفينغ هومز">
+                        <span class="footer-logo-text">لوفينغ هومز</span>
+                    </div>
+                    <p>ملاذ آمن ومريح لكلبك في هونج كونج.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="facilities.html">المرافق</a></li>
+                        <li><a href="packages.html">الحزم</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="packages.html">الإقامات</a></li>
+                        <li><a href="custom-packages.html">الحزم المخصصة</a></li>
+                        <li><a href="testimonies.html">شهادات</a></li>
+                        <li><a href="faq.html">الأسئلة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>أحجز الآن!</h4>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <p>+852 4121 6967</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <p>Design@lovinghomehk.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 فندق لوفينغ هومز للكلاب - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

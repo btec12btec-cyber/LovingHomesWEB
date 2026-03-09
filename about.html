@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن | فندق لوفينغ هومز للكلاب</title>
+    <meta name="description" content="تعرف على فندق لوفينغ هومز - ملاذ آمن ومريح للكلاب في هونج كونج">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23e6b400'/><text y='.9em' font-size='50' x='50' text-anchor='middle' fill='white'>🐾</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container { max-width: 100%; padding: 0 15px; }
+        .section { padding: 40px 15px; }
+        .about-preview { display: flex; flex-direction: column; gap: 25px; }
+        .about-img img { width: 100%; height: auto; }
+        .stats-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .stat-item { flex: 1; min-width: 90px; padding: 15px 10px; }
+        .features-grid { display: flex; flex-direction: column; gap: 20px; }
+        .feature-card img { height: 180px; }
+        @media (min-width: 768px) {
+            .about-preview { grid-template-columns: 1fr 1fr; display: grid; }
+            .stats-row { flex-wrap: nowrap; }
+            .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">التخطي للمحتوى الرئيسي</a>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="شعار لوفينغ هومز" class="logo-img">
+            <span>لوفينغ هومز</span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="افتح القائمة">☰</button>
+        <nav aria-label="التنقل الرئيسي">
+            <ul>
+                <li><a href="index.html" data-translate="الرئيسية"><span class="key-hint">1</span> الرئيسية</a></li>
+                <li><a href="about.html" class="active" data-translate="من نحن"><span class="key-hint">2</span> من نحن</a></li>
+                <li><a href="facilities.html" data-translate="المرافق"><span class="key-hint">3</span> المرافق</a></li>
+                <li><a href="packages.html" data-translate="الحزم"><span class="key-hint">4</span> الحزم</a></li>
+                <li><a href="custom-packages.html" data-translate="الحزم المخصصة"><span class="key-hint">5</span> الحزم المخصصة</a></li>
+                <li><a href="testimonies.html" data-translate="شهادات العملاء"><span class="key-hint">6</span> شهادات العملاء</a></li>
+                <li><a href="faq.html" data-translate="أسئلة شائعة"><span class="key-hint">7</span> أسئلة شائعة</a></li>
+                <li><a href="contact.html" data-translate="اتصل بنا"><span class="key-hint">8</span> اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>من نحن</h1>
+            <p>ملاذ آمن ومريح لكلبك في قلب هونج كونج</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="about-preview">
+                    <div class="about-content">
+                        <h2>رؤيتنا</h2>
+                        <p>فندق "لوفينغ هومز" هو ملاذ آمن ودافئ للكلاب يقع في قلب هونج كونج، صُمم ليجمع بين الراحة، الأمان، والرفاهية لكلبك أثناء غيابك. نحن ندرك أن الكلب ليس مجرد حيوان أليف، بل عضو عزيز في العائلة، لذلك نحرص على توفير بيئة تشبه المنزل تماماً، حيث يمكن لكلبك الاسترخاء، اللعب، واستكشاف مساحات آمنة ومرحة.</p>
+                        <p>هدفنا هو ضمان راحة وسعادة الكلب طوال فترة إقامته، من خلال تقديم مرافق متكاملة تشمل غرفاً مجهزة بأنظمة تدفئة وتبريد، مساحات لعب داخلية وخارجية، رعاية بيطرية على مدار الساعة، وخدمات إضافية مثل الحلاقة، التوصيل، والأنشطة الترفيهية اليومية. نحن نسعى لأن يشعر كل كلب بالاهتمام الشخصي والحب، وأن تعود تجربته إلى صاحبه بالطمأنينة والثقة بأن حيوانه الأليف في أيدٍ أمينة ومهتمة بكل تفاصيل رفاهيته.</p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <span class="stat-num">+676</span>
+                                <span class="stat-text">كلب سعيد</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">5</span>
+                                <span class="stat-text">سنوات خبرة</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">10</span>
+                                <span class="stat-text">أطباء بيطريين</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn">أحجز الآن!</a>
+                    </div>
+                    <div class="about-img">
+                        <img src="aboutus1.jpeg" alt="كلاب سعيدة">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section bg-light">
+            <div class="container">
+                <h2>لماذا تختارنا؟</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="aboutus4.jpeg" alt="رعاية">
+                        <h3>رعاية متميزة</h3>
+                        <p>فريق متخصص يعامل كل كلب كأنه فرد من العائلة</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="aboutus2.jpeg" alt="غرف">
+                        <h3>غرف فاخرة</h3>
+                        <p>غرف مجهزة بأحدث التقنيات للراحة</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="aboutus3.jpg" alt="تمشية">
+                        <h3>خبرة طويلة</h3>
+                        <p>أكثر من 5 سنوات من الخبرة في رعاية الكلاب</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="شعار لوفينغ هومز">
+                        <span class="footer-logo-text">لوفينغ هومز</span>
+                    </div>
+                    <p>ملاذ آمن ومريح لكلبك في هونج كونج.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="facilities.html">المرافق</a></li>
+                        <li><a href="packages.html">الحزم</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="packages.html">الإقامات</a></li>
+                        <li><a href="custom-packages.html">الحزم المخصصة</a></li>
+                        <li><a href="testimonies.html">شهادات</a></li>
+                        <li><a href="faq.html">الأسئلة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>أحجز الآن!</h4>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <p>+852 4121 6967</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <p>Design@lovinghomehk.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 فندق لوفينغ هومز للكلاب - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
