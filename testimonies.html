@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شهادات العملاء | فhotel لوفينغ هومز للكلاب</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .testimonials-wrapper { padding: 40px 15px; }
+        .testimonials-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .stat-box { min-width: 100px; padding: 20px 15px; flex: 1; max-width: 150px; }
+        .testimonials-grid { display: flex; flex-direction: column; gap: 25px; align-items: center; }
+        .testimonial-card { 
+            max-width: 100%; 
+            width: 100%; 
+            max-width: 420px; 
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            border: 3px solid #e6b400;
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+            border-color: #c99700;
+        }
+        @media (min-width: 768px) {
+            .testimonials-stats { flex-wrap: nowrap; }
+            .testimonials-grid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .stat-box { max-width: none; }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">التخطي للمحتوى الرئيسي</a>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="شعار لوفينغ هومز" class="logo-img">
+            <span>لوفينغ هومز</span>
+        </a>
+        <nav aria-label="التنقل الرئيسي">
+            <ul>
+                <li><a href="index.html" data-translate="الرئيسية"><span class="key-hint">1</span> الرئيسية</a></li>
+                <li><a href="about.html" data-translate="من نحن"><span class="key-hint">2</span> من نحن</a></li>
+                <li><a href="facilities.html" data-translate="المرافق"><span class="key-hint">3</span> المرافق</a></li>
+                <li><a href="packages.html" data-translate="الحزم"><span class="key-hint">4</span> الحزم</a></li>
+                <li><a href="custom-packages.html" data-translate="الحزم المخصصة"><span class="key-hint">5</span> الحزم المخصصة</a></li>
+                <li><a href="testimonies.html" class="active" data-translate="شهادات العملاء"><span class="key-hint">6</span> شهادات العملاء</a></li>
+                <li><a href="faq.html" data-translate="أسئلة شائعة"><span class="key-hint">7</span> أسئلة شائعة</a></li>
+                <li><a href="contact.html" data-translate="اتصل بنا"><span class="key-hint">8</span> اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1> شهادات عملائنا</h1>
+            <p>نفخر بثقة عملائنا بنا</p>
+        </section>
+        
+        <div class="testimonials-wrapper">
+            <div class="testimonials-stats">
+                <div class="stat-box">
+                    <span class="stat-icon">💯</span>
+                    <span class="stat-number">97%</span>
+                    <span class="stat-label">رضا العملاء</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-icon">⭐</span>
+                    <span class="stat-number">4.8/5</span>
+                    <span class="stat-label">التقييم</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-icon">🐕</span>
+                    <span class="stat-number">+676</span>
+                    <span class="stat-label">كلب سعيد</span>
+                </div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"تجربة رائعة! كلبي بقى في أفضل حال. الفريق محترف والأسعار معقولة."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">د</div>
+                        <div class="author-info">
+                            <div class="author-name">ديكستر مورغان</div>
+                            <div class="author-dog">ريكس - جيرمان شيبرد</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"أول مرة أترك كلبي وفريحت بالرعاية الرائعة. شكراً!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">خ</div>
+                        <div class="author-info">
+                            <div class="author-name">جيفري إبستين</div>
+                            <div class="author-dog">بودي - جولدن ريتريفر</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"خدماتهم ممتازة ونظيفة جداً. فريق العمل محب للحيوانات."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">أ</div>
+                        <div class="author-info">
+                            <div class="author-name">ألفا برافو</div>
+                            <div class="author-dog">تشو تشو - بودل</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"خدمة رائعه! كلبي عادة خايف من الغرباء لكن العماله كانو صبورين ومحبين. رجع كلبي سعيد ومرتاح!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">آ</div>
+                        <div class="author-info">
+                            <div class="author-name">آدا ونغ</div>
+                            <div class="author-dog">ماركو - بيجل</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"أفضل اختيار لإقامة الكلاب في هونج كونج! الموقع مريح، المكان نظيف، العماله محترفين. أنصح الجميع!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">س</div>
+                        <div class="author-info">
+                            <div class="author-name">تشن لي</div>
+                            <div class="author-dog">شوكي - هاسكي</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"كلبي يحب المكان جداً! المساحات كبيرة وآمنة للعب. الفريق يهتم بكل التفاصيل ويرسل صور يومية لكلبي."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">إ</div>
+                        <div class="author-info">
+                            <div class="author-name">إيريكا كيرك</div>
+                            <div class="author-dog">لونا - شيواوا</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-choose-us" style="margin-top: 40px; text-align: center; padding: 30px; background: linear-gradient(135deg, #e6b400, #f5d76e); border-radius: 15px;">
+                <h2 style="color: #1a1a1a; margin-bottom: 15px;">انضم لعائلة لوفينغ هومز!</h2>
+                <p style="color: #1a1a1a; margin-bottom: 20px; font-size: 1rem;">احجز الآن واستمتع بأفضل رعاية لكلبك.</p>
+                <a href="contact.html" class="btn" style="background: #1a1a1a; color: #e6b400; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 700;">احجز الآن</a>
+            </div>
+        </div>
+    </main>
+
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="شعار لوفينغ هومز">
+                        <span class="footer-logo-text">لوفينغ هومز</span>
+                    </div>
+                    <p>ملاذ آمن ومريح لكلبك في هونج كونج.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="facilities.html">المرافق</a></li>
+                        <li><a href="packages.html">الحزم</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="packages.html">الإقامات</a></li>
+                        <li><a href="custom-packages.html">الحزم المخصصة</a></li>
+                        <li><a href="testimonies.html">شهادات</a></li>
+                        <li><a href="faq.html">الأسئلة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>أحجز الآن!</h4>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <p>+852 4121 6967</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <p>Design@lovinghomehk.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 فhotel لوفينغ هومز للكلاب - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

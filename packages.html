@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحزم | فندق لوفينغ هومز للكلاب</title>
+    <meta name="description" content="استكشف حزم الإقامة لدينا في هونج كونج.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23e6b400'/><text y='.9em' font-size='50' x='50' text-anchor='middle' fill='white'>🐾</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container { max-width: 100%; padding: 0 15px; }
+        .section { padding: 40px 15px; }
+        .packages-grid { display: flex; flex-direction: column; gap: 20px; }
+        .package-card { padding: 25px 20px; margin: 0 10px; }
+        @media (min-width: 768px) {
+            .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">التخطي للمحتوى الرئيسي</a>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="شعار لوفينغ هومز" class="logo-img">
+            <span>لوفينغ هومز</span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-label="افتح القائمة">☰</button>
+        <nav aria-label="التنقل الرئيسي">
+            <ul>
+                <li><a href="index.html" data-translate="الرئيسية"><span class="key-hint">1</span> الرئيسية</a></li>
+                <li><a href="about.html" data-translate="من نحن"><span class="key-hint">2</span> من نحن</a></li>
+                <li><a href="facilities.html" data-translate="المرافق"><span class="key-hint">3</span> المرافق</a></li>
+                <li><a href="packages.html" class="active" data-translate="الحزم"><span class="key-hint">4</span> الحزم</a></li>
+                <li><a href="custom-packages.html" data-translate="الحزم المخصصة"><span class="key-hint">5</span> الحزم المخصصة</a></li>
+                <li><a href="testimonies.html" data-translate="شهادات العملاء"><span class="key-hint">6</span> شهادات العملاء</a></li>
+                <li><a href="faq.html" data-translate="أسئلة شائعة"><span class="key-hint">7</span> أسئلة شائعة</a></li>
+                <li><a href="contact.html" data-translate="اتصل بنا"><span class="key-hint">8</span> اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <h1>حزم الإقامة</h1>
+            <p>اختر الحزمة المناسبة لكلبك</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <h2>الحزم المقدمة</h2>
+                
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>الباقة المميزة</h3>
+                        </div>
+                        <ul class="package-features">
+                            <li>4 مرات مشي / 4 أنشطة يومياً.</li>
+                            <li>مساحة عشب خاصة.</li>
+                            <li>تحديثات وصور يومية.</li>
+                            <li>مكافآت (حسب اتفاق).</li>
+                        </ul>
+                        <a href="contact.html" class="btn">احجز الآن</a>
+                    </div>
+                    
+                    <div class="package-card featured">
+                        <div class="package-header">
+                            <h3>الباقة الكلاسيكية</h3>
+                            <div class="package-badge">الأكثر طلباً</div>
+                        </div>
+                        <ul class="package-features">
+                            <li>3 مرات مشي / 3 أنشطة يومياً.</li>
+                            <li>دخول حظيرة اللعب الداخلية.</li>
+                            <li>توفير منطقة للاسترخاء.</li>
+                            <li>جلسة حلاقة وتنظيف.</li>
+                        </ul>
+                        <a href="contact.html" class="btn">احجز الآن</a>
+                    </div>
+                    
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>باقة اليوم (Day Care)</h3>
+                        </div>
+                        <ul class="package-features">
+                            <li>مرتين مشي يومياً.</li>
+                            <li>منطقة لعب خارجية.</li>
+                            <li>مسار الرشاقة.</li>
+                            <li>منطقة مخصصة للحفر في الرمل.</li>
+                        </ul>
+                        <a href="contact.html" class="btn">احجز الآن</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div style="background: linear-gradient(135deg, #e6b400, #f5d76e); padding: 30px 20px; border-radius: 15px; text-align: center; margin: 0 10px;">
+                <h2 style="color: #1a1a1a; margin-bottom: 15px; font-size: 1.3rem;">📦 باقات مخصصة</h2>
+                <p style="color: #1a1a1a; margin-bottom: 20px; font-size: 1rem;">نوفر باقات مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية.</p>
+<a href="custom-packages.html" class="btn" style="background: #1a1a1a; color: #e6b400; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 700;">📞 أحجز الآن!</a>
+            </div>
+        </section>
+    </main>
+
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="شعار لوفينغ هومز">
+                        <span class="footer-logo-text">لوفينغ هومز</span>
+                    </div>
+                    <p>ملاذ آمن ومريح لكلبك في هونج كونج.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="facilities.html">المرافق</a></li>
+                        <li><a href="packages.html">الحزم</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="packages.html">الإقامات</a></li>
+                        <li><a href="custom-packages.html">الحزم المخصصة</a></li>
+                        <li><a href="testimonies.html">شهادات</a></li>
+                        <li><a href="faq.html">الأسئلة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>أحجز الآن!</h4>
+                    <div class="footer-contact-item">
+                        <span>📞</span>
+                        <p>+852 4121 6967</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>✉️</span>
+                        <p>Design@lovinghomehk.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 فhotel لوفينغ هومز للكلاب - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
